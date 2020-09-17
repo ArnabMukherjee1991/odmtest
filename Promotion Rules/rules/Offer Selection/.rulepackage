@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Offer Selection</name>
+  <uuid>6ae2a1da-c27d-4b36-b576-19a4a77d43f9</uuid>
+</ilog.rules.studio.model.base:RulePackage>

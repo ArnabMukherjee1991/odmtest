@@ -32,15 +32,10 @@ com.hp.model.request.DetermineDiscountRequest.selectedProducts#phrase.navigation
 com.hp.model.request.DetermineDiscountRequest.validBundles#phrase.action = set the valid bundles of {this} to {valid bundle}
 com.hp.model.request.DetermineDiscountRequest.validBundles#phrase.navigation = {valid bundle} of {this}
 
-# com.hp.model.request.SimpleRequest
-com.hp.model.request.SimpleRequest#concept.label = simple request
-com.hp.model.request.SimpleRequest.selectedProducts#phrase.action = set the selected products of {this} to {selected product}
-com.hp.model.request.SimpleRequest.selectedProducts#phrase.navigation = {selected product} of {this}
-com.hp.model.request.SimpleRequest.valid#phrase.action = make it {valid} that {this} is valid
-com.hp.model.request.SimpleRequest.valid#phrase.navigation = {this} is valid
-
 # com.hp.model.request.ValidateBundle
 com.hp.model.request.ValidateBundle#concept.label = validate bundle
+com.hp.model.request.ValidateBundle.productBundles#phrase.action = set the product bundles of {this} to {product bundle}
+com.hp.model.request.ValidateBundle.productBundles#phrase.navigation = {product bundle} of {this}
 
 # com.hp.model.response.DetermineDiscountResponse
 com.hp.model.response.DetermineDiscountResponse#concept.label = determine discount response
@@ -48,13 +43,6 @@ com.hp.model.response.DetermineDiscountResponse.bestOffer#phrase.action = set th
 com.hp.model.response.DetermineDiscountResponse.bestOffer#phrase.navigation = {best offer} of {this}
 com.hp.model.response.DetermineDiscountResponse.bundledProducts#phrase.action = set the bundled products of {this} to {bundled product}
 com.hp.model.response.DetermineDiscountResponse.bundledProducts#phrase.navigation = {bundled product} of {this}
-
-# com.hp.model.response.SimpleResponse
-com.hp.model.response.SimpleResponse#concept.label = simple response
-com.hp.model.response.SimpleResponse.leftoverProducts#phrase.action = set the leftover products of {this} to {leftover product}
-com.hp.model.response.SimpleResponse.leftoverProducts#phrase.navigation = {leftover product} of {this}
-com.hp.model.response.SimpleResponse.productBundle#phrase.action = set the product bundles of {this} to {product bundle}
-com.hp.model.response.SimpleResponse.productBundle#phrase.navigation = {product bundle} of {this}
 
 # com.hp.util.CommonUtils
 com.hp.util.CommonUtils#concept.label = common utils

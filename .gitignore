@@ -41,3 +41,5 @@ output/
 /target/
 /.syncEntries
 /output/
+/lib
+/bin

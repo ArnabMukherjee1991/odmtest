@@ -12,7 +12,8 @@ public class Bundle
     public java.math.BigDecimal discountedPrice;
     public java.math.BigDecimal totalPrice
                 property update "true";
-    public boolean valid;
+    public boolean valid
+                property update "true";
     public Bundle(java.util.List arg1 domain 0,* class com.hp.model.Product, 
         boolean arg2, 
         java.math.BigDecimal arg3, 
@@ -52,22 +53,14 @@ public class DetermineDiscountRequest
     public string toString();
 }
 
-public class SimpleRequest
+public class ValidateBundle
 {
-    public java.util.List selectedProducts domain 0,* class com.hp.model.Product;
-    public boolean valid
-                property update "true";
-    public SimpleRequest(java.util.List arg1 domain 0,* class com.hp.model.Product, 
-        boolean arg2);
-    public SimpleRequest();
+    public java.util.List productBundles domain 0,* class com.hp.model.Bundle;
+    public string transactionId;
+    public ValidateBundle();
     public boolean equals(object arg);
     public int hashCode();
     public string toString();
-}
-
-public class ValidateBundle
-{
-    public ValidateBundle();
 }
 
 package com.hp.model.response;
@@ -78,16 +71,6 @@ public class DetermineDiscountResponse
     public com.hp.model.Bundle bestOffer;
     public java.util.List bundledProducts domain 0,* class com.hp.model.Bundle;
     public DetermineDiscountResponse();
-    public boolean equals(object arg);
-    public int hashCode();
-    public string toString();
-}
-
-public class SimpleResponse
-{
-    public java.util.List leftoverProducts domain 0,* class com.hp.model.Product;
-    public java.util.List productBundle domain 0,* class com.hp.model.Bundle;
-    public SimpleResponse();
     public boolean equals(object arg);
     public int hashCode();
     public string toString();

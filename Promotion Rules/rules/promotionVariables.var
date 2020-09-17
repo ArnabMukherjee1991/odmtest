@@ -2,8 +2,7 @@
 <ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
   <name>promotionVariables</name>
   <uuid>05506405-41d5-47ae-9d02-0a9b02cf180b</uuid>
-  <variables name="response" type="com.hp.model.response.SimpleResponse" initialValue="" verbalization="the response"/>
   <variables name="determineBestOfferRequest" type="com.hp.model.request.DetermineDiscountRequest" initialValue="" verbalization="the offer request"/>
   <variables name="determineBestOfferResponse" type="com.hp.model.response.DetermineDiscountResponse" initialValue="" verbalization="the offer response"/>
-  <variables name="request" type="com.hp.model.request.SimpleRequest" initialValue="" verbalization="the request"/>
+  <variables name="request" type="com.hp.model.request.ValidateBundle" initialValue="" verbalization="the request"/>
 </ilog.rules.studio.model.base:VariableSet>
