@@ -20,10 +20,10 @@ import lombok.experimental.FieldDefaults;
 
 public class Product {
 	@Getter(onMethod_ = { @BusinessType(PRODUCT_CODE_DOMAIN) })
-	private String code;
+	private String code; 
 	@Getter(onMethod_ = { @BusinessType(PRODUCT_CAT_CODE_DOMAIN) })
 	private String category;
-	private BigDecimal price;
+	private BigDecimal price = new BigDecimal("0.0");
 	@Getter(onMethod_ = { @BusinessType(PRODUCT_DESCRIPTION_DOMAIN) })
 	private String description;
 

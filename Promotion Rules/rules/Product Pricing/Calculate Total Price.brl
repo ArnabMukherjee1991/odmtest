@@ -5,11 +5,11 @@
   <locale>en_US</locale>
   <definition><![CDATA[definitions
     set 'Selected Product' to a product in the selected products of 'the offer request' ;
-    set 'Bundle' to a bundle in the valid bundles of 'the offer request';
+    set 'Bundle' to a bundle in the valid bundles of 'the offer request' ;
     set 'Bundle Product' to a product in the bundle products of Bundle ;
 if
     the code of 'Selected Product' is the code of 'Bundle Product'
 then
-    set the total price of Bundle to the price of 'Selected Product' + the total price of Bundle ;
-    set the price of 'Bundle Product' to the price of 'Selected Product' ;]]></definition>
+    set the price of 'Bundle Product' to the price of 'Selected Product' ;
+    set the total price of Bundle to the price of 'Selected Product' + the total price of Bundle ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

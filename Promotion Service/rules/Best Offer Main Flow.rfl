@@ -17,9 +17,10 @@
         </RuleList>
       </RuleTask>
       <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Create an Offer with all products" Ordering="Default">
-        <InitialActions Language="irl"><![CDATA[determineBestOfferRequest.validBundles = new ArrayList();
-
-determineBestOfferRequest.validBundles.add(new Bundle());]]></InitialActions>
+        <InitialActions Language="irl"><![CDATA[if(CommonUtils.isListEmpty(determineBestOfferRequest.validBundles)){
+	determineBestOfferRequest.validBundles = new ArrayList();
+	determineBestOfferRequest.validBundles.add(new Bundle());
+}]]></InitialActions>
         <RuleList>
           <Package Name="Finalize"/>
         </RuleList>
@@ -95,7 +96,7 @@ determineBestOfferRequest.validBundles.add(new Bundle());]]></InitialActions>
       <Data Name="node_8#height">36.414215</Data>
       <Data Name="node_9#height">82.80469</Data>
       <Data Name="node_2#width">102.0</Data>
-      <Data Name="node_10#x">149.5</Data>
+      <Data Name="node_10#x">148.5</Data>
       <Data Name="node_10#y">521.4378</Data>
       <Data Name="node_0#width">21.0</Data>
       <Data Name="node_4#x">228.0</Data>
@@ -112,8 +113,10 @@ determineBestOfferRequest.validBundles.add(new Bundle());]]></InitialActions>
       <Data Name="node_2#x">78.31906</Data>
       <Data Name="node_2#y">184.11539</Data>
       <Data Name="node_1#name">node_2</Data>
+      <Data Name="node_10#name">node_10</Data>
       <Data Name="node_4#name">node_4</Data>
       <Data Name="node_8#width">36.414215</Data>
+      <Data Name="node_7#name">node_7</Data>
       <Data Name="node_1#width">17.0</Data>
       <Data Name="node_9#name">node_9</Data>
       <Data Name="node_0#name">node_0</Data>

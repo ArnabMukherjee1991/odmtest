@@ -25,9 +25,9 @@ public class Bundle {
 
 	private List<Product> bundleProducts;
 	private boolean isValid;
-	private BigDecimal totalPrice = ZERO;
-	private BigDecimal discountPercentage = ZERO;
-	private BigDecimal discountedPrice = ZERO;
+	private BigDecimal totalPrice = new BigDecimal("0.0");
+	private BigDecimal discountPercentage = new BigDecimal("0.0");
+	private BigDecimal discountedPrice = new BigDecimal("0.0");
 
 	public List<Product> getBundleProducts() {
 		if (Objects.isNull(bundleProducts)) {
