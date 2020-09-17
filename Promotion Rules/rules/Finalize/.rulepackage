@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Finalize</name>
+  <uuid>1579f125-965c-4a1c-843a-f0fcd601074b</uuid>
+</ilog.rules.studio.model.base:RulePackage>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Calculate Total Price</name>
+  <uuid>fa07f7b7-f3b8-41ec-9fc6-8f5f89ca67d6</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'Selected Product' to a product in the selected products of 'the offer request' ;
+    set 'Bundle' to a bundle in the valid bundles of 'the offer request';
+    set 'Bundle Product' to a product in the bundle products of Bundle ;
+if
+    the code of 'Selected Product' is the code of 'Bundle Product'
+then
+    set the total price of Bundle to the price of 'Selected Product' + the total price of Bundle ;
+    set the price of 'Bundle Product' to the price of 'Selected Product' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

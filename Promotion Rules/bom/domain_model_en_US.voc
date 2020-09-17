@@ -1,0 +1,25 @@
+# Vocabulary Properties
+uuid = de730b4b-01c6-4de3-affe-52c687039f03
+
+# com.myshop.productservice.rules.domain.ProductCategoryCodeType
+com.myshop.productservice.rules.domain.ProductCategoryCodeType#concept.label = product category code
+com.myshop.productservice.rules.domain.ProductCategoryCodeType.CABLE#instance.label = Replacement cables
+com.myshop.productservice.rules.domain.ProductCategoryCodeType.EARPAD#instance.label = Replacement earpads
+com.myshop.productservice.rules.domain.ProductCategoryCodeType.HPON#instance.label = Headphones (on ear variety)
+com.myshop.productservice.rules.domain.ProductCategoryCodeType.HPOVER#instance.label = Headphones (over ear variety)
+com.myshop.productservice.rules.domain.ProductCategoryCodeType.STAND#instance.label = Headphone stands
+
+# com.myshop.productservice.rules.domain.ProductCodeType
+com.myshop.productservice.rules.domain.ProductCodeType#concept.label = com.myshop.productservice.rules.domain.ProductCodeType
+com.myshop.productservice.rules.domain.ProductCodeType.CABLE001#instance.label = Standard cable
+com.myshop.productservice.rules.domain.ProductCodeType.CABLE002#instance.label = Super clarity gold cables
+com.myshop.productservice.rules.domain.ProductCodeType.PAD001#instance.label = Pair of pleather earpads
+com.myshop.productservice.rules.domain.ProductCodeType.PAD002#instance.label = Pair of velvet earpads
+com.myshop.productservice.rules.domain.ProductCodeType.STAND001#instance.label = Simple wooden stand for 1 headphone
+com.myshop.productservice.rules.domain.ProductCodeType.STAND002#instance.label = Metal stand for 1 headphone
+com.myshop.productservice.rules.domain.ProductCodeType.STAND003#instance.label = Stylish metal stand for up to 2 headphones
+com.myshop.productservice.rules.domain.ProductCodeType.STOMP10#instance.label = Series 10 Stomp Headphones
+com.myshop.productservice.rules.domain.ProductCodeType.STOMP20#instance.label = Series 20 Stomp Headphones
+com.myshop.productservice.rules.domain.ProductCodeType.WHIS1000#instance.label = Series 1000 Whisper Headphones
+com.myshop.productservice.rules.domain.ProductCodeType.WHIS2000#instance.label = Series 2000 Whisper Headphones
+com.myshop.productservice.rules.domain.ProductCodeType.WHIS3000#instance.label = Series 3000 Whisper Headphones

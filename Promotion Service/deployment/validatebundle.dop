@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="validatebundleservice" usingRuleflow="true" ruleflowName="validation_flow" targetRuleProjectName="Promotion Service">
+  <name>validatebundle</name>
+  <uuid>adeef5a6-803b-4bb4-8a9c-78bfbb174247</uuid>
+  <referencedVariables variableName="request" variableSetName="promotionVariables" direction="IN_OUT">
+    <variableSet href="../../Promotion%20Rules/rules/promotionVariables.var#05506405-41d5-47ae-9d02-0a9b02cf180b"/>
+  </referencedVariables>
+  <ruleflow href="../rules/validation_flow.rfl#9f6ead28-8b39-4d15-9c72-1becd502e54b"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="validatebundle_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../Promotion%20Service#bb7e3690-8a04-4977-b12c-bc6b053ab235"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

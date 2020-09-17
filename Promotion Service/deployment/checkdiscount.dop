@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="checkdiscountservice" usingRuleflow="true" ruleflowName="Best Offer Flow_RETE" targetRuleProjectName="Promotion Service">
+  <name>checkdiscount</name>
+  <uuid>871aea2e-6f18-4019-a30e-16e0573c74f7</uuid>
+  <referencedVariables variableName="determineBestOfferRequest" variableSetName="promotionVariables">
+    <variableSet href="../../Promotion%20Rules/rules/promotionVariables.var#05506405-41d5-47ae-9d02-0a9b02cf180b"/>
+  </referencedVariables>
+  <referencedVariables variableName="determineBestOfferResponse" variableSetName="promotionVariables" direction="OUT">
+    <variableSet href="../../Promotion%20Rules/rules/promotionVariables.var#05506405-41d5-47ae-9d02-0a9b02cf180b"/>
+  </referencedVariables>
+  <ruleflow href="../rules/Best%20Offer%20Flow_RETE.rfl#1f8b40e5-096a-45ce-85f6-fd764a2c1027"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="checkdiscount_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../Promotion%20Service#bb7e3690-8a04-4977-b12c-bc6b053ab235"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,46 @@
+
+property uuid "ef2d1114-3d4a-4afe-82d1-e368876dbd1f"
+package com.myshop.productservice.rules.domain;
+
+
+public class ProductCategoryCodeType
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en" "3"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "1"
+        property domainProviderResource "DynamicDomains.xlsx"
+        property domainValueProviderName "com.ibm.rules.domainProvider.msexcel2007"
+{
+    domain {static HPON, static HPOVER, static EARPAD, static CABLE, static STAND}
+    public static final readonly com.myshop.productservice.rules.domain.ProductCategoryCodeType CABLE;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCategoryCodeType EARPAD;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCategoryCodeType HPON;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCategoryCodeType HPOVER;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCategoryCodeType STAND;
+}
+
+public class ProductCodeType
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en" "3"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "1"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "1"
+        property domainProviderResource "DynamicDomains.xlsx"
+        property domainValueProviderName "com.ibm.rules.domainProvider.msexcel2007"
+{
+    domain {static WHIS1000, static WHIS2000, static WHIS3000, static STOMP10, static STOMP20, static PAD001, static PAD002, static CABLE001, static CABLE002, static STAND001, static STAND002, static STAND003}
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType CABLE001;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType CABLE002;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType PAD001;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType PAD002;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType STAND001;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType STAND002;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType STAND003;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType STOMP10;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType STOMP20;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType WHIS1000;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType WHIS2000;
+    public static final readonly com.myshop.productservice.rules.domain.ProductCodeType WHIS3000;
+}
+

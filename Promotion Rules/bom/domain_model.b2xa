@@ -1,0 +1,114 @@
+<b2x:translation xmlns:b2x="http://schemas.ilog.com/JRules/1.3/Translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.ilog.com/JRules/1.3/Translation ilog/rules/schemas/1_3/b2x.xsd">
+    <id>ed229803-bc3a-435c-b6c9-821c2e2faabe</id>
+    <lang>ARL</lang>
+    <class>
+        <businessName>com.myshop.productservice.rules.domain.ProductCategoryCodeType</businessName>
+        <executionName>java.lang.String</executionName>
+        <attribute>
+            <name>CABLE</name>
+            <getter language="irl"><![CDATA[
+            return "CABLE";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>EARPAD</name>
+            <getter language="irl"><![CDATA[
+            return "EARPAD";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>HPON</name>
+            <getter language="irl"><![CDATA[
+            return "HPON";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>HPOVER</name>
+            <getter language="irl"><![CDATA[
+            return "HPOVER";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>STAND</name>
+            <getter language="irl"><![CDATA[
+            return "STAND";
+            ]]></getter>
+        </attribute>
+    </class>
+    <class>
+        <businessName>com.myshop.productservice.rules.domain.ProductCodeType</businessName>
+        <executionName>java.lang.String</executionName>
+        <attribute>
+            <name>CABLE001</name>
+            <getter language="irl"><![CDATA[
+            return "CABLE001";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>CABLE002</name>
+            <getter language="irl"><![CDATA[
+            return "CABLE002";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>PAD001</name>
+            <getter language="irl"><![CDATA[
+            return "PAD001";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>PAD002</name>
+            <getter language="irl"><![CDATA[
+            return "PAD002";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>STAND001</name>
+            <getter language="irl"><![CDATA[
+            return "STAND001";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>STAND002</name>
+            <getter language="irl"><![CDATA[
+            return "STAND002";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>STAND003</name>
+            <getter language="irl"><![CDATA[
+            return "STAND003";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>STOMP10</name>
+            <getter language="irl"><![CDATA[
+            return "STOMP10";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>STOMP20</name>
+            <getter language="irl"><![CDATA[
+            return "STOMP20";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>WHIS1000</name>
+            <getter language="irl"><![CDATA[
+            return "WHIS1000";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>WHIS2000</name>
+            <getter language="irl"><![CDATA[
+            return "WHIS2000";
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>WHIS3000</name>
+            <getter language="irl"><![CDATA[
+            return "WHIS3000";
+            ]]></getter>
+        </attribute>
+    </class>
+</b2x:translation>

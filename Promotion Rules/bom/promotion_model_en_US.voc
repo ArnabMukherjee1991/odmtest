@@ -1,0 +1,65 @@
+# Vocabulary Properties
+uuid = 7ae79e79-947f-4bd2-b5f1-741ffdd05f42
+
+# com.hp.model.Bundle
+com.hp.model.Bundle#concept.label = bundle
+com.hp.model.Bundle.bundleProducts#phrase.action = set the bundle products of {this} to {bundle product}
+com.hp.model.Bundle.bundleProducts#phrase.navigation = {bundle product} of {this}
+com.hp.model.Bundle.discountPercentage#phrase.action = set the discount percentage of {this} to {discount percentage}
+com.hp.model.Bundle.discountPercentage#phrase.navigation = {discount percentage} of {this}
+com.hp.model.Bundle.discountedPrice#phrase.action = set the discounted price of {this} to {discounted price}
+com.hp.model.Bundle.discountedPrice#phrase.navigation = {discounted price} of {this}
+com.hp.model.Bundle.totalPrice#phrase.action = set the total price of {this} to {total price}
+com.hp.model.Bundle.totalPrice#phrase.navigation = {total price} of {this}
+com.hp.model.Bundle.valid#phrase.action = make it {valid} that {this} is valid
+com.hp.model.Bundle.valid#phrase.navigation = {this} is valid
+
+# com.hp.model.Product
+com.hp.model.Product#concept.label = product
+com.hp.model.Product.category#phrase.action = set the category of {this} to {category}
+com.hp.model.Product.category#phrase.navigation = {category} of {this}
+com.hp.model.Product.code#phrase.action = set the code of {this} to {code}
+com.hp.model.Product.code#phrase.navigation = {code} of {this}
+com.hp.model.Product.description#phrase.action = set the description of {this} to {description}
+com.hp.model.Product.description#phrase.navigation = {description} of {this}
+com.hp.model.Product.price#phrase.action = set the price of {this} to {price}
+com.hp.model.Product.price#phrase.navigation = {price} of {this}
+
+# com.hp.model.request.DetermineDiscountRequest
+com.hp.model.request.DetermineDiscountRequest#concept.label = determine discount request
+com.hp.model.request.DetermineDiscountRequest.selectedProducts#phrase.action = set the selected products of {this} to {selected product}
+com.hp.model.request.DetermineDiscountRequest.selectedProducts#phrase.navigation = {selected product} of {this}
+com.hp.model.request.DetermineDiscountRequest.validBundles#phrase.action = set the valid bundles of {this} to {valid bundle}
+com.hp.model.request.DetermineDiscountRequest.validBundles#phrase.navigation = {valid bundle} of {this}
+
+# com.hp.model.request.SimpleRequest
+com.hp.model.request.SimpleRequest#concept.label = simple request
+com.hp.model.request.SimpleRequest.selectedProducts#phrase.action = set the selected products of {this} to {selected product}
+com.hp.model.request.SimpleRequest.selectedProducts#phrase.navigation = {selected product} of {this}
+com.hp.model.request.SimpleRequest.valid#phrase.action = make it {valid} that {this} is valid
+com.hp.model.request.SimpleRequest.valid#phrase.navigation = {this} is valid
+
+# com.hp.model.request.ValidateBundle
+com.hp.model.request.ValidateBundle#concept.label = validate bundle
+
+# com.hp.model.response.DetermineDiscountResponse
+com.hp.model.response.DetermineDiscountResponse#concept.label = determine discount response
+com.hp.model.response.DetermineDiscountResponse.bestOffer#phrase.action = set the best offer of {this} to {best offer}
+com.hp.model.response.DetermineDiscountResponse.bestOffer#phrase.navigation = {best offer} of {this}
+com.hp.model.response.DetermineDiscountResponse.bundledProducts#phrase.action = set the bundled products of {this} to {bundled product}
+com.hp.model.response.DetermineDiscountResponse.bundledProducts#phrase.navigation = {bundled product} of {this}
+
+# com.hp.model.response.SimpleResponse
+com.hp.model.response.SimpleResponse#concept.label = simple response
+com.hp.model.response.SimpleResponse.leftoverProducts#phrase.action = set the leftover products of {this} to {leftover product}
+com.hp.model.response.SimpleResponse.leftoverProducts#phrase.navigation = {leftover product} of {this}
+com.hp.model.response.SimpleResponse.productBundle#phrase.action = set the product bundles of {this} to {product bundle}
+com.hp.model.response.SimpleResponse.productBundle#phrase.navigation = {product bundle} of {this}
+
+# com.hp.util.CommonUtils
+com.hp.util.CommonUtils#concept.label = common utils
+com.hp.util.CommonUtils.addProductToAList(com.hp.model.Product,java.util.List)#phrase.action = add product {0} to {1}
+com.hp.util.CommonUtils.createBundleUsingPrimaryProduct(com.hp.model.Product,java.util.List)#phrase.action = create an offer bundle with {0} in {1}
+com.hp.util.CommonUtils.findBestOffer(java.util.List)#phrase.navigation = find best offer from {0}
+com.hp.util.CommonUtils.isListEmpty(java.util.List)#phrase.navigation = {0} is empty
+com.hp.util.CommonUtils.removeUnussedProductsFromOffer(com.hp.model.Bundle)#phrase.action = delete unused product from off {0}

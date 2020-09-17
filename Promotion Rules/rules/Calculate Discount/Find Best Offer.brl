@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Find Best Offer</name>
+  <uuid>ec90397a-e0ca-4ec2-b845-0c7d643d9ae4</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then
+    delete unused product from off find best offer from the valid bundles of 'the offer request' ;
+    set the best offer of 'the offer response' to find best offer from the valid bundles of 'the offer request' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

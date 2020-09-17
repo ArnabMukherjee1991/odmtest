@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Calculate Discount</name>
+  <uuid>46399266-3eb2-42d8-88c8-ed273984b124</uuid>
+</ilog.rules.studio.model.base:RulePackage>

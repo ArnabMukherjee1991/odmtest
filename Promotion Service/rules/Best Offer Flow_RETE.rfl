@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Best Offer Flow_RETE</name>
+  <uuid>1f8b40e5-096a-45ce-85f6-fd764a2c1027</uuid>
+  <locale>en_US</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_0">
+        <Actions Language="irl"><![CDATA[determineBestOfferResponse = new DetermineDiscountResponse();]]></Actions>
+      </StartTask>
+      <RuleTask ExecutionMode="Sequential" ExitCriteria="None" Identifier="Bundle" Ordering="Literal">
+        <RuleList>
+          <Rule Uuid="fa07f7b7-f3b8-41ec-9fc6-8f5f89ca67d6"/>
+        </RuleList>
+      </RuleTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Create an Offer with all products" Ordering="Default">
+        <InitialActions Language="irl"><![CDATA[determineBestOfferRequest.validBundles = new ArrayList();
+determineBestOfferRequest.validBundles.add(new Bundle());]]></InitialActions>
+        <RuleList>
+          <Package Name="Finalize"/>
+        </RuleList>
+      </RuleTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Product Pricing" Ordering="Default">
+        <RuleList>
+          <Package Name="Product Pricing"/>
+        </RuleList>
+      </RuleTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Calculate Total Discount" Ordering="Default">
+        <RuleList>
+          <Rule Uuid="f81d6136-c8c6-4617-8cbc-9785e7e2d4ff"/>
+        </RuleList>
+      </RuleTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Find Best Offer" Ordering="Default">
+        <RuleList>
+          <Rule Uuid="ec90397a-e0ca-4ec2-b845-0c7d643d9ae4"/>
+        </RuleList>
+      </RuleTask>
+      <StopTask Identifier="task_1"/>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_0" Task="task_0"/>
+      <TaskNode Identifier="node_1" Task="task_1"/>
+      <TaskNode Identifier="node_4" Task="Bundle"/>
+      <BranchNode Identifier="node_5"/>
+      <BranchNode Identifier="node_8"/>
+      <TaskNode Identifier="node_9" Task="Create an Offer with all products"/>
+      <TaskNode Identifier="node_2" Task="Product Pricing"/>
+      <TaskNode Identifier="node_3" Task="Calculate Total Discount"/>
+      <TaskNode Identifier="node_6" Task="Find Best Offer"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="transition_0" Source="node_0" Target="node_8"/>
+      <Transition Identifier="transition_1" Source="node_4" Target="node_3"/>
+      <Transition Identifier="transition_3" Source="node_5" Target="node_4">
+        <Conditions Language="bal"><![CDATA[all of the following conditions are true : 
+- it is not true that the valid bundles of 'the offer request' is empty ]]></Conditions>
+      </Transition>
+      <Transition Identifier="transition_4" Source="node_5" Target="node_9"/>
+      <Transition Identifier="transition_6" Source="node_8" Target="node_2">
+        <Conditions Language="bal"><![CDATA[it is not true that the selected products of 'the offer request' is empty ]]></Conditions>
+      </Transition>
+      <Transition Identifier="transition_7" Source="node_8" Target="node_1"/>
+      <Transition Identifier="transition_8" Source="node_9" Target="node_3"/>
+      <Transition Identifier="transition_2" Source="node_2" Target="node_5"/>
+      <Transition Identifier="transition_5" Source="node_3" Target="node_6"/>
+      <Transition Identifier="transition_9" Source="node_6" Target="node_1"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="en_US">
+      <Data Name="node_4#width">102.0</Data>
+      <Data Name="node_2#height">53.402344</Data>
+      <Data Name="node_1#height">17.999985</Data>
+      <Data Name="node_3#height">68.103516</Data>
+      <Data Name="node_0#height">21.0</Data>
+      <Data Name="node_4#height">97.50586</Data>
+      <Data Name="node_8#x">72.250015</Data>
+      <Data Name="node_8#y">89.20711</Data>
+      <Data Name="node_9#x">71.0</Data>
+      <Data Name="node_5#name">node_6</Data>
+      <Data Name="node_9#width">102.0</Data>
+      <Data Name="node_9#y">395.98367</Data>
+      <Data Name="transition_3#label">Bundle Available</Data>
+      <Data Name="node_5#height">36.414185</Data>
+      <Data Name="node_6#height">68.103516</Data>
+      <Data Name="transition_6#label">Products Available?</Data>
+      <Data Name="node_8#height">36.414215</Data>
+      <Data Name="node_9#height">82.80469</Data>
+      <Data Name="node_2#width">102.0</Data>
+      <Data Name="node_0#width">21.0</Data>
+      <Data Name="node_4#x">228.0</Data>
+      <Data Name="node_3#y">528.7884</Data>
+      <Data Name="node_4#y">395.98367</Data>
+      <Data Name="node_5#x">149.50002</Data>
+      <Data Name="node_5#y">279.02365</Data>
+      <Data Name="node_6#x">149.5</Data>
+      <Data Name="node_5#width">36.414215</Data>
+      <Data Name="node_6#y">646.8919</Data>
+      <Data Name="node_0#x">72.25</Data>
+      <Data Name="node_0#y">10.5</Data>
+      <Data Name="node_1#x">72.25</Data>
+      <Data Name="node_8#name">node_6</Data>
+      <Data Name="node_1#y">739.94366</Data>
+      <Data Name="node_2#x">78.319016</Data>
+      <Data Name="node_2#y">184.11539</Data>
+      <Data Name="node_3#x">149.5</Data>
+      <Data Name="node_1#name">node_2</Data>
+      <Data Name="node_3#width">102.0</Data>
+      <Data Name="node_4#name">node_4</Data>
+      <Data Name="node_8#width">36.414215</Data>
+      <Data Name="node_1#width">18.0</Data>
+      <Data Name="node_9#name">node_9</Data>
+      <Data Name="node_0#name">node_0</Data>
+      <Data Name="node_4#label">Validate Products Against Each Bundle</Data>
+      <Data Name="node_6#width">102.0</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties>
+    <imports><![CDATA[import com.hp.model.response.DetermineDiscountResponse;
+use determineBestOfferRequest;
+import com.hp.model.Bundle;
+use accessoriesList;
+import com.hp.util.CommonUtils;
+use mainProducts;
+use determineBestOfferResponse;
+import java.util.ArrayList;
+]]></imports>
+  </Properties>
+</Ruleflow>
+</rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>
