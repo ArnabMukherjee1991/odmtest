@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "6d70c703-16af-431a-954a-6c98634eb014",
+		"name": "ODM test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check Bundle Discount",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ormAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "odmAdmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"__DecisionID__\": \"Check Discount1 \",\r\n    \"determineBestOfferRequest\": {\r\n        \"selectedProducts\": [\r\n            {\r\n                \"code\": \"WHIS1000\",\r\n                \"category\": \"HPOVER\"\r\n            },\r\n            {\r\n                \"code\": \"WHIS3000\",\r\n                \"category\": \"HPOVER\"\r\n            },\r\n            {\r\n                \"code\": \"STAND001\",\r\n                \"category\": \"STAND\"\r\n            },\r\n            {\r\n                \"code\": \"STAND002\",\r\n                \"category\": \"STAND\"\r\n            }\r\n        ],\r\n        \"validBundles\": [\r\n            {\r\n                \"bundleProducts\": [\r\n                    {\r\n                        \"code\": \"WHIS1000\",\r\n                        \"category\": \"HPOVER\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND001\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND002\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND003\",\r\n                        \"category\": \"STAND\"\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"bundleProducts\": [\r\n                    {\r\n                        \"code\": \"WHIS3000\",\r\n                        \"category\": \"HPOVER\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND001\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND002\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND003\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"PAD001\",\r\n                        \"category\": \"EARPAD\"\r\n                    },\r\n                    {\r\n                        \"code\": \"PAD001\",\r\n                        \"category\": \"EARPAD\"\r\n                    },\r\n                    {\r\n                        \"code\": \"CABLE002\",\r\n                        \"category\": \"CABLE\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/DecisionService/rest/v1/productserviceapp1/checkdiscountservice/WADL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"DecisionService",
+						"rest",
+						"v1",
+						"productserviceapp1",
+						"checkdiscountservice",
+						"WADL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Bundle Discount RETE",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ormAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "odmAdmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"__DecisionID__\": \"Check Discount seq\",\r\n    \"determineBestOfferRequest\": {\r\n        \"selectedProducts\": [\r\n            {\r\n                \"code\": \"WHIS1000\",\r\n                \"category\": \"HPOVER\"\r\n            },\r\n            {\r\n                \"code\": \"WHIS3000\",\r\n                \"category\": \"HPOVER\"\r\n            },\r\n            {\r\n                \"code\": \"STAND001\",\r\n                \"category\": \"STAND\"\r\n            },\r\n            {\r\n                \"code\": \"STAND002\",\r\n                \"category\": \"STAND\"\r\n            }\r\n        ],\r\n        \"validBundles\": [\r\n            {\r\n                \"bundleProducts\": [\r\n                    {\r\n                        \"code\": \"WHIS1000\",\r\n                        \"category\": \"HPOVER\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND001\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND002\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND003\",\r\n                        \"category\": \"STAND\"\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"bundleProducts\": [\r\n                    {\r\n                        \"code\": \"WHIS3000\",\r\n                        \"category\": \"HPOVER\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND001\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND002\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND003\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"PAD001\",\r\n                        \"category\": \"EARPAD\"\r\n                    },\r\n                    {\r\n                        \"code\": \"PAD001\",\r\n                        \"category\": \"EARPAD\"\r\n                    },\r\n                    {\r\n                        \"code\": \"CABLE002\",\r\n                        \"category\": \"CABLE\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/DecisionService/rest/v1/productserviceapp1/checkdiscountservice/WADL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"DecisionService",
+						"rest",
+						"v1",
+						"productserviceapp1",
+						"checkdiscountservice",
+						"WADL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Bundle Discount RETE Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ormAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "odmAdmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"__DecisionID__\": \"No Bundle2\",\r\n    \"determineBestOfferRequest\": {\r\n        \"selectedProducts\": [\r\n            {\r\n                \"code\": \"WHIS1000\",\r\n                \"category\": \"HPOVER\"\r\n            },\r\n            {\r\n                \"code\": \"WHIS3000\",\r\n                \"category\": \"HPOVER\"\r\n            },\r\n            {\r\n                \"code\": \"STAND001\",\r\n                \"category\": \"STAND\"\r\n            },\r\n            {\r\n                \"code\": \"STAND002\",\r\n                \"category\": \"STAND\"\r\n            }\r\n        ],\r\n        \"validBundles\": [\r\n         \r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/DecisionService/rest/v1/productserviceapp1/checkdiscountservice/WADL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"DecisionService",
+						"rest",
+						"v1",
+						"productserviceapp1",
+						"checkdiscountservice",
+						"WADL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Bundles",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ormAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "odmAdmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\": {\r\n        \"transactionId\": \"string\",\r\n        \"productBundles\": [\r\n            {\r\n                \"bundleProducts\": [\r\n                    \r\n                    {\r\n                        \"code\": \"WHIS1000\",\r\n                        \"category\": \"HPOVER\"\r\n                    },\r\n                    {\r\n                        \"code\": \"PAD001\",\r\n                        \"category\": \"EARPAD\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND001\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND002\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND003\",\r\n                        \"category\": \"STAND\"\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"bundleProducts\": [\r\n                    {\r\n                        \"code\": \"WHIS3000\",\r\n                        \"category\": \"HPOVER\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND001\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND002\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"STAND003\",\r\n                        \"category\": \"STAND\"\r\n                    },\r\n                    {\r\n                        \"code\": \"PAD001\",\r\n                        \"category\": \"EARPAD\"\r\n                    },\r\n                    {\r\n                        \"code\": \"PAD001\",\r\n                        \"category\": \"EARPAD\"\r\n                    },\r\n                    {\r\n                        \"code\": \"CABLE002\",\r\n                        \"category\": \"CABLE\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    },\r\n    \"__DecisionID__\": \"Validation 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/DecisionService/rest/v1/productserviceapp1/validatebundleservice/WADL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"DecisionService",
+						"rest",
+						"v1",
+						"productserviceapp1",
+						"validatebundleservice",
+						"WADL"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
