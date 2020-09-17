@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import static com.hp.model.ModelConstants.ZERO;
 
 @Data
 @AllArgsConstructor
@@ -21,12 +22,12 @@ public class Bundle {
 	 * Possible to add Primary Product in a separate element
 	 */
 	// private Product primaryProduct;
-	
+
 	private List<Product> bundleProducts;
 	private boolean isValid;
-	private BigDecimal totalPrice;
-	private BigDecimal discountPercentage;
-	private BigDecimal discountedPrice;
+	private BigDecimal totalPrice = ZERO;
+	private BigDecimal discountPercentage = ZERO;
+	private BigDecimal discountedPrice = ZERO;
 
 	public List<Product> getBundleProducts() {
 		if (Objects.isNull(bundleProducts)) {

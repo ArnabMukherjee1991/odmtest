@@ -3,7 +3,6 @@ package com.hp.model;
 import static com.hp.model.ModelConstants.PRODUCT_CAT_CODE_DOMAIN;
 import static com.hp.model.ModelConstants.PRODUCT_CODE_DOMAIN;
 import static com.hp.model.ModelConstants.PRODUCT_DESCRIPTION_DOMAIN;
-
 import java.math.BigDecimal;
 
 import ilog.rules.bom.annotations.BusinessType;
@@ -18,6 +17,7 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
+
 public class Product {
 	@Getter(onMethod_ = { @BusinessType(PRODUCT_CODE_DOMAIN) })
 	private String code;
